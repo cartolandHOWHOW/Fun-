@@ -1,0 +1,166 @@
+{
+  "vocabulary": [
+    {
+      "英文單字": "apartment",
+      "詞性": "noun",
+      "中文意思": "公寓",
+      "英文例句": "I live in a small apartment near the city center."
+    },
+    {
+      "英文單字": "birthday",
+      "詞性": "noun",
+      "中文意思": "生日",
+      "英文例句": "We celebrated her birthday with a big party."
+    },
+    {
+      "英文單字": "customer",
+      "詞性": "noun",
+      "中文意思": "顧客",
+      "英文例句": "The customer was very satisfied with our service."
+    },
+    {
+      "英文單字": "dangerous",
+      "詞性": "adjective",
+      "中文意思": "危險的",
+      "英文例句": "It's dangerous to drive in heavy rain."
+    },
+    {
+      "英文單字": "environment",
+      "詞性": "noun",
+      "中文意思": "環境",
+      "英文例句": "We need to protect our environment for future generations."
+    },
+    {
+      "英文單字": "favorite",
+      "詞性": "adjective",
+      "中文意思": "最喜歡的",
+      "英文例句": "Pizza is my favorite food."
+    },
+    {
+      "英文單字": "grandfather",
+      "詞性": "noun",
+      "中文意思": "祖父",
+      "英文例句": "My grandfather tells me interesting stories about his childhood."
+    },
+    {
+      "英文單字": "healthy",
+      "詞性": "adjective",
+      "中文意思": "健康的",
+      "英文例句": "Eating vegetables is healthy for your body."
+    },
+    {
+      "英文單字": "interview",
+      "詞性": "noun",
+      "中文意思": "面試",
+      "英文例句": "I have a job interview tomorrow morning."
+    },
+    {
+      "英文單字": "journey",
+      "詞性": "noun",
+      "中文意思": "旅程",
+      "英文例句": "The journey from Tokyo to Osaka takes about three hours."
+    },
+    {
+      "英文單字": "kitchen",
+      "詞性": "noun",
+      "中文意思": "廚房",
+      "英文例句": "My mother is cooking dinner in the kitchen."
+    },
+    {
+      "英文單字": "language",
+      "詞性": "noun",
+      "中文意思": "語言",
+      "英文例句": "English is the most widely spoken language in the world."
+    },
+    {
+      "英文單字": "advantage",
+      "詞性": "noun",
+      "中文意思": "優勢",
+      "英文例句": "Speaking two languages gives you an advantage in the job market."
+    },
+    {
+      "英文單字": "behavior",
+      "詞性": "noun",
+      "中文意思": "行為",
+      "英文例句": "His behavior in class was very respectful."
+    },
+    {
+      "英文單字": "communicate",
+      "詞性": "verb",
+      "中文意思": "溝通",
+      "英文例句": "It's important to communicate clearly with your colleagues."
+    },
+    {
+      "英文單字": "decision",
+      "詞性": "noun",
+      "中文意思": "決定",
+      "英文例句": "Making this decision was very difficult for me."
+    },
+    {
+      "英文單字": "especially",
+      "詞性": "adverb",
+      "中文意思": "特別地",
+      "英文例句": "I love all fruits, especially apples and oranges."
+    },
+    {
+      "英文單字": "frequently",
+      "詞性": "adverb",
+      "中文意思": "頻繁地",
+      "英文例句": "She frequently visits her grandmother on weekends."
+    },
+    {
+      "英文單字": "government",
+      "詞性": "noun",
+      "中文意思": "政府",
+      "英文例句": "The government announced new policies to help students."
+    },
+    {
+      "英文單字": "individual",
+      "詞性": "adjective",
+      "中文意思": "個人的",
+      "英文例句": "Each student has individual learning needs."
+    },
+    {
+      "英文單字": "invitation",
+      "詞性": "noun",
+      "中文意思": "邀請",
+      "英文例句": "I received an invitation to my friend's wedding."
+    },
+    {
+      "英文單字": "necessary",
+      "詞性": "adjective",
+      "中文意思": "必要的",
+      "英文例句": "It's necessary to wear a helmet when riding a bicycle."
+    },
+    {
+      "英文單字": "opportunity",
+      "詞性": "noun",
+      "中文意思": "機會",
+      "英文例句": "This job gives me an opportunity to travel around the world."
+    },
+    {
+      "英文單字": "politician",
+      "詞性": "noun",
+      "中文意思": "政治家",
+      "英文例句": "The politician promised to improve education in the city."
+    },
+    {
+      "英文單字": "relationship",
+      "詞性": "noun",
+      "中文意思": "關係",
+      "英文例句": "Building a good relationship with your neighbors is important."
+    },
+    {
+      "英文單字": "medicine",
+      "詞性": "noun",
+      "中文意思": "藥物",
+      "英文例句": "The doctor gave me medicine for my headache."
+    },
+    {
+      "英文單字": "organize",
+      "詞性": "verb",
+      "中文意思": "組織",
+      "英文例句": "Can you help me organize this birthday party?"
+    }
+  ]
+}
