@@ -1,0 +1,177 @@
+[
+  {
+    "id": "f6a7b8c9-d0e1-2345-6789-abcdef012345",
+    "english_word": "Ameliorate",
+    "part_of_speech": "v.",
+    "chinese_meaning": "改善；改良",
+    "example_sentence": "Efforts were made to ameliorate the harsh working conditions."
+  },
+  {
+    "id": "a7b8c9d0-e1f2-3456-7890-bcdef0123456",
+    "english_word": "Capitulate",
+    "part_of_speech": "v.",
+    "chinese_meaning": "投降；屈服",
+    "example_sentence": "After weeks of siege, the city was forced to capitulate."
+  },
+  {
+    "id": "b8c9d0e1-f2a3-4567-8901-cdef01234567",
+    "english_word": "Conundrum",
+    "part_of_speech": "n.",
+    "chinese_meaning": "難題；謎語",
+    "example_sentence": "The physicist presented a complex conundrum that baffled his colleagues."
+  },
+  {
+    "id": "c9d0e1f2-a3b4-5678-9012-def012345678",
+    "english_word": "Deleterious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "有害的；有毒的",
+    "example_sentence": "Smoking has many deleterious effects on health."
+  },
+  {
+    "id": "d0e1f2a3-b4c5-6789-0123-ef0123456789",
+    "english_word": "Epitome",
+    "part_of_speech": "n.",
+    "chinese_meaning": "縮影；典範",
+    "example_sentence": "He is the epitome of a modern gentleman."
+  },
+  {
+    "id": "e1f2a3b4-c5d6-7890-1234-f0123456789a",
+    "english_word": "Exacerbate",
+    "part_of_speech": "v.",
+    "chinese_meaning": "惡化；加劇",
+    "example_sentence": "The new policy will only exacerbate the existing social problems."
+  },
+  {
+    "id": "f2a3b4c5-d6e7-8901-2345-0123456789ab",
+    "english_word": "Facetious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "輕浮的；開玩笑的",
+    "example_sentence": "His facetious remarks during the serious meeting were inappropriate."
+  },
+  {
+    "id": "a3b4c5d6-e7f8-9012-3456-123456789abc",
+    "english_word": "Garrulous",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "喋喋不休的；多嘴的",
+    "example_sentence": "The garrulous old man told endless stories about his youth."
+  },
+  {
+    "id": "b4c5d6e7-f8a9-0123-4567-23456789abcd",
+    "english_word": "Gregarious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "好交際的；群居的",
+    "example_sentence": "Elephants are highly gregarious animals, living in large family groups."
+  },
+  {
+    "id": "c5d6e7f8-a9b0-1234-5678-3456789abcde",
+    "english_word": "Ignominious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "可恥的；不名譽的",
+    "example_sentence": "They suffered an ignominious defeat in the final match."
+  },
+  {
+    "id": "d6e7f8a9-b0c1-2345-6789-456789abcdef",
+    "english_word": "Impecunious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "貧窮的；一貧如洗的",
+    "example_sentence": "He spent his impecunious youth dreaming of success."
+  },
+  {
+    "id": "e7f8a9b0-c1d2-3456-7890-56789abcdef0",
+    "english_word": "Jubilant",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "歡欣鼓舞的；喜氣洋洋的",
+    "example_sentence": "The fans were jubilant after their team won the championship."
+  },
+  {
+    "id": "f8a9b0c1-d2e3-4567-8901-6789abcdef01",
+    "english_word": "Meticulous",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "一絲不苟的；非常仔細的",
+    "example_sentence": "She's a meticulous researcher, always checking her facts."
+  },
+  {
+    "id": "a9b0c1d2-e3f4-5678-9012-789abcdef012",
+    "english_word": "Mollify",
+    "part_of_speech": "v.",
+    "chinese_meaning": "安撫；平息",
+    "example_sentence": "He tried to mollify her anger with a sincere apology."
+  },
+  {
+    "id": "b0c1d2e3-f4a5-6789-0123-89abcdef0123",
+    "english_word": "Nefarious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "邪惡的；不道德的",
+    "example_sentence": "The police uncovered a nefarious plot to smuggle drugs."
+  },
+  {
+    "id": "c1d2e3f4-a5b6-7890-1234-9abcdef01234",
+    "english_word": "Obfuscate",
+    "part_of_speech": "v.",
+    "chinese_meaning": "使模糊；使困惑",
+    "example_sentence": "Some politicians obfuscate the truth to confuse voters."
+  },
+  {
+    "id": "d2e3f4a5-b6c7-8901-2345-abcdef012345",
+    "english_word": "Perfunctory",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "敷衍的；草率的",
+    "example_sentence": "He gave a perfunctory nod of greeting before rushing past."
+  },
+  {
+    "id": "e3f4a5b6-c7d8-9012-3456-bcdef0123456",
+    "english_word": "Pernicious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "有害的；惡性的",
+    "example_sentence": "The pernicious influence of social media on young minds is a growing concern."
+  },
+  {
+    "id": "f4a5b6c7-d8e9-0123-4567-cdef01234567",
+    "english_word": "Profligate",
+    "part_of_speech": "adj./n.",
+    "chinese_meaning": "揮霍無度的；浪費的；放蕩者",
+    "example_sentence": "His profligate spending habits led him into deep debt."
+  },
+  {
+    "id": "a5b6c7d8-e9f0-1234-5678-def012345678",
+    "english_word": "Quixotic",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "異想天開的；不切實際的",
+    "example_sentence": "His quixotic pursuit of justice often put him at odds with the authorities."
+  },
+  {
+    "id": "b6c7d8e9-f0a1-2345-6789-ef0123456789",
+    "english_word": "Rancor",
+    "part_of_speech": "n.",
+    "chinese_meaning": "深仇；怨恨",
+    "example_sentence": "He spoke without rancor, despite the bitter dispute."
+  },
+  {
+    "id": "c7d8e9f0-a1b2-3456-7890-f0123456789a",
+    "english_word": "Recalcitrant",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "頑固的；不服從的",
+    "example_sentence": "The recalcitrant student refused to follow the teacher's instructions."
+  },
+  {
+    "id": "d8e9f0a1-b2c3-4567-8901-0123456789ab",
+    "english_word": "Sycophant",
+    "part_of_speech": "n.",
+    "chinese_meaning": "馬屁精；奉承者",
+    "example_sentence": "The manager disliked sycophants who constantly praised his every decision."
+  },
+  {
+    "id": "e9f0a1b2-c3d4-5678-9012-123456789abc",
+    "english_word": "Ubiquitous",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "普遍存在的；無處不在的",
+    "example_sentence": "Smartphones have become ubiquitous in modern society."
+  },
+  {
+    "id": "f0a1b2c3-d4e5-6789-0123-23456789abcd",
+    "english_word": "Vehement",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "激烈的；熱情的",
+    "example_sentence": "She expressed her vehement opposition to the proposed changes."
+  }
+]

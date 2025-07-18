@@ -1,0 +1,177 @@
+[
+  {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef0123456789",
+    "english_word": "Abstruse",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "深奧的；難懂的",
+    "example_sentence": "The philosopher's theories were so abstruse that few could fully grasp them."
+  },
+  {
+    "id": "b2c3d4e5-f6a7-8901-bcde-f01234567890",
+    "english_word": "Acrimonious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "尖刻的；嚴厲的",
+    "example_sentence": "Their divorce was an acrimonious affair, marked by bitter accusations."
+  },
+  {
+    "id": "c3d4e5f6-a7b8-9012-cdef-012345678901",
+    "english_word": "Anachronism",
+    "part_of_speech": "n.",
+    "chinese_meaning": "時代錯誤；不合時宜的人事物",
+    "example_sentence": "A typewriter in a modern office building is an anachronism."
+  },
+  {
+    "id": "d4e5f6a7-b8c9-0123-def0-123456789012",
+    "english_word": "Capricious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "反覆無常的；任性的",
+    "example_sentence": "The weather in the mountains can be very capricious."
+  },
+  {
+    "id": "e5f6a7b8-c9d0-1234-ef01-234567890123",
+    "english_word": "Chicanery",
+    "part_of_speech": "n.",
+    "chinese_meaning": "詭計；欺騙",
+    "example_sentence": "He was accused of chicanery and dishonesty in business dealings."
+  },
+  {
+    "id": "f6a7b8c9-d0e1-2345-f012-345678901234",
+    "english_word": "Cognizant",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "知曉的；察覺的",
+    "example_sentence": "We must be cognizant of the potential risks involved."
+  },
+  {
+    "id": "a7b8c9d0-e1f2-3456-0123-456789012345",
+    "english_word": "Dichotomy",
+    "part_of_speech": "n.",
+    "chinese_meaning": "二分法；對立",
+    "example_sentence": "The film explores the dichotomy between good and evil."
+  },
+  {
+    "id": "b8c9d0e1-f2a3-4567-1234-567890123456",
+    "english_word": "Disingenuous",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "不真誠的；不坦率的",
+    "example_sentence": "It was disingenuous of him to pretend he didn't know about the problem."
+  },
+  {
+    "id": "c9d0e1f2-a3b4-5678-2345-678901234567",
+    "english_word": "Eschew",
+    "part_of_speech": "v.",
+    "chinese_meaning": "避開；戒除",
+    "example_sentence": "He was a strict vegetarian who eschewed all meat products."
+  },
+  {
+    "id": "d0e1f2a3-b4c5-6789-3456-789012345678",
+    "english_word": "Euphemism",
+    "part_of_speech": "n.",
+    "chinese_meaning": "委婉語；M修辭",
+    "example_sentence": "'Passed away' is a common euphemism for 'died'."
+  },
+  {
+    "id": "e1f2a3b4-c5d6-7890-4567-890123456789",
+    "english_word": "Fastidious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "挑剔的；追求完美的",
+    "example_sentence": "He's very fastidious about his appearance and always dresses impeccably."
+  },
+  {
+    "id": "f2a3b4c5-d6e7-8901-5678-901234567890",
+    "english_word": "Gregarious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "好交際的；群居的 (重複但適用於C2語境)",
+    "example_sentence": "Though a brilliant academic, he was not particularly gregarious outside of conferences."
+  },
+  {
+    "id": "a3b4c5d6-e7f8-9012-6789-012345678901",
+    "english_word": "Hegemony",
+    "part_of_speech": "n.",
+    "chinese_meaning": "霸權；支配權",
+    "example_sentence": "The fall of the empire marked the end of its global hegemony."
+  },
+  {
+    "id": "b4c5d6e7-f8a9-0123-7890-123456789012",
+    "english_word": "Idiosyncrasy",
+    "part_of_speech": "n.",
+    "chinese_meaning": "怪癖；特點",
+    "example_sentence": "One of his idiosyncrasies was his habit of always wearing odd socks."
+  },
+  {
+    "id": "c5d6e7f8-a9b0-1234-8901-234567890123",
+    "english_word": "Malinger",
+    "part_of_speech": "v.",
+    "chinese_meaning": "裝病以逃避工作",
+    "example_sentence": "The manager suspected he was malingering to avoid the difficult assignment."
+  },
+  {
+    "id": "d6e7f8a9-b0c1-2345-9012-345678901234",
+    "english_word": "Obsequious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "諂媚的；阿諛奉承的",
+    "example_sentence": "The new employee was overly obsequious towards the CEO."
+  },
+  {
+    "id": "e7f8a9b0-c1d2-3456-0123-456789012345",
+    "english_word": "Panacea",
+    "part_of_speech": "n.",
+    "chinese_meaning": "萬靈丹；萬能藥",
+    "example_sentence": "Some people believe that technology is a panacea for all societal problems."
+  },
+  {
+    "id": "f8a9b0c1-d2e3-4567-1234-567890123456",
+    "english_word": "Pernicious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "有害的；惡性的 (重複但適用於C2語境)",
+    "example_sentence": "The pernicious effects of corporate greed on society cannot be overstated."
+  },
+  {
+    "id": "a9b0c1d2-e3f4-5678-2345-678901234567",
+    "english_word": "Propensity",
+    "part_of_speech": "n.",
+    "chinese_meaning": "傾向；習性",
+    "example_sentence": "He has a propensity for exaggeration when telling stories."
+  },
+  {
+    "id": "b0c1d2e3-f4a5-6789-3456-789012345678",
+    "english_word": "Recalcitrant",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "頑固的；不服從的 (重複但適用於C2語境)",
+    "example_sentence": "The school struggled to manage the recalcitrant students who constantly disrupted classes."
+  },
+  {
+    "id": "c1d2e3f4-a5b6-7890-4567-890123456789",
+    "english_word": "Reticent",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "沉默寡言的；含蓄的",
+    "example_sentence": "He was reticent about his past, revealing little to anyone."
+  },
+  {
+    "id": "d2e3f4a5-b6c7-8901-5678-901234567890",
+    "english_word": "Subterfuge",
+    "part_of_speech": "n.",
+    "chinese_meaning": "詭計；伎倆",
+    "example_sentence": "The spy used a clever subterfuge to escape detection."
+  },
+  {
+    "id": "e3f4a5b6-c7d8-9012-6789-012345678901",
+    "english_word": "Surreptitious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "秘密的；偷偷摸摸的",
+    "example_sentence": "They held surreptitious meetings to plan their protest."
+  },
+  {
+    "id": "f4a5b6c7-d8e9-0123-7890-123456789012",
+    "english_word": "Tenuous",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "微弱的；稀薄的；站不住腳的",
+    "example_sentence": "Their claim to the property was based on a tenuous connection to the original owner."
+  },
+  {
+    "id": "a5b6c7d8-e9f0-1234-8901-234567890123",
+    "english_word": "Voracious",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "貪婪的；食量大的",
+    "example_sentence": "He has a voracious appetite for knowledge, constantly reading books."
+  }
+]

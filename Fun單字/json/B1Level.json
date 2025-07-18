@@ -1,0 +1,177 @@
+[
+  {
+    "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+    "english_word": "Achieve",
+    "part_of_speech": "v.",
+    "chinese_meaning": "達成；實現",
+    "example_sentence": "She worked hard to achieve her goals."
+  },
+  {
+    "id": "b2c3d4e5-f6a7-8901-2345-67890abcdef0",
+    "english_word": "Benefit",
+    "part_of_speech": "n./v.",
+    "chinese_meaning": "利益；好處；有益於",
+    "example_sentence": "Eating healthy food will benefit your overall health."
+  },
+  {
+    "id": "c3d4e5f6-a7b8-9012-3456-7890abcdef01",
+    "english_word": "Challenge",
+    "part_of_speech": "n./v.",
+    "chinese_meaning": "挑戰；質疑",
+    "example_sentence": "Learning a new language can be a real challenge."
+  },
+  {
+    "id": "d4e5f6a7-b8c9-0123-4567-890abcdef012",
+    "english_word": "Connect",
+    "part_of_speech": "v.",
+    "chinese_meaning": "連接；聯繫",
+    "example_sentence": "Can you connect this printer to my computer?"
+  },
+  {
+    "id": "e5f6a7b8-c9d0-1234-5678-90abcdef0123",
+    "english_word": "Decide",
+    "part_of_speech": "v.",
+    "chinese_meaning": "決定",
+    "example_sentence": "We need to decide what to do next."
+  },
+  {
+    "id": "f6a7b8c9-d0e1-2345-6789-0abcdef01234",
+    "english_word": "Depend",
+    "part_of_speech": "v.",
+    "chinese_meaning": "依賴；取決於",
+    "example_sentence": "Our picnic plans depend on the weather."
+  },
+  {
+    "id": "a7b8c9d0-e1f2-3456-7890-abcdef012345",
+    "english_word": "Develop",
+    "part_of_speech": "v.",
+    "chinese_meaning": "發展；培養",
+    "example_sentence": "The city plans to develop a new park."
+  },
+  {
+    "id": "b8c9d0e1-f2a3-4567-8901-bcdef0123456",
+    "english_word": "Environment",
+    "part_of_speech": "n.",
+    "chinese_meaning": "環境",
+    "example_sentence": "We should protect our natural environment."
+  },
+  {
+    "id": "c9d0e1f2-a3b4-5678-9012-cdef01234567",
+    "english_word": "Estimate",
+    "part_of_speech": "v./n.",
+    "chinese_meaning": "估計；估價",
+    "example_sentence": "I estimate the project will take about two weeks."
+  },
+  {
+    "id": "d0e1f2a3-b4c5-6789-0123-def012345678",
+    "english_word": "Feature",
+    "part_of_speech": "n./v.",
+    "chinese_meaning": "特色；特徵；以…為特色",
+    "example_sentence": "The new phone has several impressive features."
+  },
+  {
+    "id": "e1f2a3b4-c5d6-7890-1234-ef0123456789",
+    "english_word": "Global",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "全球的；全世界的",
+    "example_sentence": "Climate change is a global issue."
+  },
+  {
+    "id": "f2a3b4c5-d6e7-8901-2345-f0123456789a",
+    "english_word": "Improve",
+    "part_of_speech": "v.",
+    "chinese_meaning": "改善；提高",
+    "example_sentence": "She wants to improve her English speaking skills."
+  },
+  {
+    "id": "a3b4c5d6-e7f8-9012-3456-0123456789ab",
+    "english_word": "Individual",
+    "part_of_speech": "n./adj.",
+    "chinese_meaning": "個人；個別的",
+    "example_sentence": "Each individual has unique talents."
+  },
+  {
+    "id": "b4c5d6e7-f8a9-0123-4567-123456789abc",
+    "english_word": "Maintain",
+    "part_of_speech": "v.",
+    "chinese_meaning": "維持；保養",
+    "example_sentence": "It's important to maintain a healthy diet."
+  },
+  {
+    "id": "c5d6e7f8-a9b0-1234-5678-23456789abcd",
+    "english_word": "Material",
+    "part_of_speech": "n./adj.",
+    "chinese_meaning": "材料；物質的",
+    "example_sentence": "What material is this shirt made from?"
+  },
+  {
+    "id": "d6e7f8a9-b0c1-2345-6789-3456789abcde",
+    "english_word": "Opportunity",
+    "part_of_speech": "n.",
+    "chinese_meaning": "機會",
+    "example_sentence": "This is a great opportunity to learn something new."
+  },
+  {
+    "id": "e7f8a9b0-c1d2-3456-7890-456789abcdef",
+    "english_word": "Participate",
+    "part_of_speech": "v.",
+    "chinese_meaning": "參與；參加",
+    "example_sentence": "Everyone is encouraged to participate in the discussion."
+  },
+  {
+    "id": "f8a9b0c1-d2e3-4567-8901-56789abcdef0",
+    "english_word": "Perform",
+    "part_of_speech": "v.",
+    "chinese_meaning": "執行；表演",
+    "example_sentence": "The students will perform a play next week."
+  },
+  {
+    "id": "a9b0c1d2-e3f4-5678-9012-6789abcdef01",
+    "english_word": "Protect",
+    "part_of_speech": "v.",
+    "chinese_meaning": "保護",
+    "example_sentence": "Wear sunscreen to protect your skin from the sun."
+  },
+  {
+    "id": "b0c1d2e3-f4a5-6789-0123-789abcdef012",
+    "english_word": "Provide",
+    "part_of_speech": "v.",
+    "chinese_meaning": "提供",
+    "example_sentence": "The hotel provides free breakfast for guests."
+  },
+  {
+    "id": "c1d2e3f4-a5b6-7890-1234-89abcdef0123",
+    "english_word": "Recognize",
+    "part_of_speech": "v.",
+    "chinese_meaning": "認出；承認",
+    "example_sentence": "I didn't recognize him at first because he'd changed so much."
+  },
+  {
+    "id": "d2e3f4a5-b6c7-8901-2345-9abcdef01234",
+    "english_word": "Resource",
+    "part_of_speech": "n.",
+    "chinese_meaning": "資源",
+    "example_sentence": "Water is a precious natural resource."
+  },
+  {
+    "id": "e3f4a5b6-c7d8-9012-3456-abcdef012345",
+    "english_word": "Respond",
+    "part_of_speech": "v.",
+    "chinese_meaning": "回應；答覆",
+    "example_sentence": "Please respond to my email as soon as possible."
+  },
+  {
+    "id": "f4a5b6c7-d8e9-0123-4567-bcdef0123456",
+    "english_word": "Situation",
+    "part_of_speech": "n.",
+    "chinese_meaning": "情況；處境",
+    "example_sentence": "We need to assess the current situation carefully."
+  },
+  {
+    "id": "a5b6c7d8-e9f0-1234-5678-cdef01234567",
+    "english_word": "Suggest",
+    "part_of_speech": "v.",
+    "chinese_meaning": "建議；暗示",
+    "example_sentence": "I suggest we take a break now."
+  }
+]

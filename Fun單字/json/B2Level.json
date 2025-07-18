@@ -1,0 +1,177 @@
+[
+  {
+    "id": "e6a7b8c9-d0e1-2345-6789-abcdef012345",
+    "english_word": "Acquire",
+    "part_of_speech": "v.",
+    "chinese_meaning": "取得；學到",
+    "example_sentence": "She managed to acquire a good knowledge of Spanish during her stay in Madrid."
+  },
+  {
+    "id": "f7a8b9c0-d1e2-3456-7890-bcdef0123456",
+    "english_word": "Assess",
+    "part_of_speech": "v.",
+    "chinese_meaning": "評估；估計",
+    "example_sentence": "We need to assess the risks before making a final decision."
+  },
+  {
+    "id": "a8b9c0d1-e2f3-4567-8901-cdef01234567",
+    "english_word": "Convey",
+    "part_of_speech": "v.",
+    "chinese_meaning": "傳達；表達",
+    "example_sentence": "Please convey my apologies to your sister."
+  },
+  {
+    "id": "b9c0d1e2-f3a4-5678-9012-def012345678",
+    "english_word": "Crucial",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "關鍵的；重要的",
+    "example_sentence": "Timely communication is crucial for the success of the project."
+  },
+  {
+    "id": "c0d1e2f3-a4b5-6789-0123-ef0123456789",
+    "english_word": "Diminish",
+    "part_of_speech": "v.",
+    "chinese_meaning": "減少；減弱",
+    "example_sentence": "The pain in her knee has diminished significantly."
+  },
+  {
+    "id": "d1e2f3a4-b5c6-7890-1234-f0123456789a",
+    "english_word": "Elaborate",
+    "part_of_speech": "adj./v.",
+    "chinese_meaning": "精緻複雜的；詳細闡述",
+    "example_sentence": "They're making the most elaborate preparations for the wedding."
+  },
+  {
+    "id": "e2f3a4b5-c6d7-8901-2345-0123456789ab",
+    "english_word": "Emphasize",
+    "part_of_speech": "v.",
+    "chinese_meaning": "強調；著重",
+    "example_sentence": "He emphasized the importance of teamwork in his speech."
+  },
+  {
+    "id": "f3a4b5c6-d7e8-9012-3456-123456789abc",
+    "english_word": "Endeavor",
+    "part_of_speech": "n./v.",
+    "chinese_meaning": "努力；嘗試",
+    "example_sentence": "We will endeavor to meet your requirements."
+  },
+  {
+    "id": "a4b5c6d7-e8f9-0123-4567-23456789abcd",
+    "english_word": "Erode",
+    "part_of_speech": "v.",
+    "chinese_meaning": "侵蝕；腐蝕",
+    "example_sentence": "Coastal erosion is a serious problem in many parts of the world."
+  },
+  {
+    "id": "b5c6d7e8-f9a0-1234-5678-3456789abcde",
+    "english_word": "Explicit",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "明確的；清楚的",
+    "example_sentence": "The instructions were explicit, leaving no room for misunderstanding."
+  },
+  {
+    "id": "c6d7e8f9-a0b1-2345-6789-456789abcdef",
+    "english_word": "Fluctuate",
+    "part_of_speech": "v.",
+    "chinese_meaning": "波動；變動",
+    "example_sentence": "The stock market tends to fluctuate wildly."
+  },
+  {
+    "id": "d7e8f9a0-b1c2-3456-7890-56789abcdef0",
+    "english_word": "Formulate",
+    "part_of_speech": "v.",
+    "chinese_meaning": "規劃；制定",
+    "example_sentence": "We need to formulate a new strategy for the upcoming quarter."
+  },
+  {
+    "id": "e8f9a0b1-c2d3-4567-8901-6789abcdef01",
+    "english_word": "Hinder",
+    "part_of_speech": "v.",
+    "chinese_meaning": "阻礙；妨礙",
+    "example_sentence": "Bad weather could hinder our progress."
+  },
+  {
+    "id": "f9a0b1c2-d3e4-5678-9012-789abcdef012",
+    "english_word": "Imply",
+    "part_of_speech": "v.",
+    "chinese_meaning": "暗示；意味著",
+    "example_sentence": "Are you implying that I'm wrong?"
+  },
+  {
+    "id": "a0b1c2d3-e4f5-6789-0123-89abcdef0123",
+    "english_word": "Inherent",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "固有的；內在的",
+    "example_sentence": "There are inherent risks in almost every investment."
+  },
+  {
+    "id": "b1c2d3e4-f5a6-7890-1234-9abcdef01234",
+    "english_word": "Initiate",
+    "part_of_speech": "v.",
+    "chinese_meaning": "開始；發起",
+    "example_sentence": "The company decided to initiate a new training program."
+  },
+  {
+    "id": "c2d3e4f5-a6b7-8901-2345-abcdef012345",
+    "english_word": "Legitimate",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "合法的；正當的",
+    "example_sentence": "Is his claim to the property legitimate?"
+  },
+  {
+    "id": "d3e4f5a6-b7c8-9012-3456-bcdef0123456",
+    "english_word": "Minimize",
+    "part_of_speech": "v.",
+    "chinese_meaning": "最小化；使減到最少",
+    "example_sentence": "We aim to minimize the impact of our activities on the environment."
+  },
+  {
+    "id": "e4f5a6b7-c8d9-0123-4567-cdef01234567",
+    "english_word": "Perceive",
+    "part_of_speech": "v.",
+    "chinese_meaning": "察覺；理解",
+    "example_sentence": "How do customers perceive our brand?"
+  },
+  {
+    "id": "f5a6b7c8-d9e0-1234-5678-def012345678",
+    "english_word": "Presume",
+    "part_of_speech": "v.",
+    "chinese_meaning": "假定；推測",
+    "example_sentence": "I presume you're familiar with the rules."
+  },
+  {
+    "id": "a6b7c8d9-e0f1-2345-6789-ef0123456789",
+    "english_word": "Prevail",
+    "part_of_speech": "v.",
+    "chinese_meaning": "盛行；獲勝",
+    "example_sentence": "Justice will eventually prevail."
+  },
+  {
+    "id": "b7c8d9e0-f1a2-3456-7890-f0123456789a",
+    "english_word": "Qualify",
+    "part_of_speech": "v.",
+    "chinese_meaning": "使具備資格；限定",
+    "example_sentence": "Does he qualify for the scholarship?"
+  },
+  {
+    "id": "c8d9e0f1-a2b3-4567-8901-0123456789ab",
+    "english_word": "Reinforce",
+    "part_of_speech": "v.",
+    "chinese_meaning": "加強；增援",
+    "example_sentence": "The new evidence helped to reinforce the prosecution's case."
+  },
+  {
+    "id": "d9e0f1a2-b3c4-5678-9012-123456789abc",
+    "english_word": "Substantial",
+    "part_of_speech": "adj.",
+    "chinese_meaning": "大量的；實質性的",
+    "example_sentence": "The company made a substantial profit this year."
+  },
+  {
+    "id": "e0f1a2b3-c4d5-6789-0123-23456789abcd",
+    "english_word": "Undergo",
+    "part_of_speech": "v.",
+    "chinese_meaning": "經歷；承受",
+    "example_sentence": "She had to undergo surgery for her injury."
+  }
+]

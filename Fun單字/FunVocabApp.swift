@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct FunVocab: App {
+struct FunVocabApp: App {
     var body: some Scene {
         WindowGroup {
-            MainMenuView()
+            ContentView()
         }
     }
 }
