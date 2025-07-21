@@ -1,4 +1,52 @@
+//
+//  memo.swift
+//  Fun單字
+//
+//  Created by max on 2025/7/21.
+//
 import SwiftUI
+import AVFoundation
+
+// MARK: - 語音播放管理器
+class SpeechManager: ObservableObject {
+    private let synthesizer = AVSpeechSynthesizer()
+    @Published var isSpeaking = false
+    
+    init() {
+        // 設置音頻會話
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("音頻會話設置失敗: \(error)")
+        }
+    }
+    
+    func speak(text: String, language: String = "en-US") {
+        // 停止當前播放
+        if synthesizer.isSpeaking {
+            synthesizer.stopSpeaking(at: .immediate)
+        }
+        
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: language)
+        utterance.rate = 0.5 // 語速調慢一點
+        utterance.volume = 1.0
+        
+        isSpeaking = true
+        synthesizer.speak(utterance)
+        
+        // 設置完成回調
+        DispatchQueue.main.asyncAfter(deadline: .now() + Double(text.count) * 0.1 + 1.0) {
+            self.isSpeaking = false
+        }
+    }
+    
+    func stopSpeaking() {
+        synthesizer.stopSpeaking(at: .immediate)
+        isSpeaking = false
+    }
+}
 
 // MARK: - 數據模型
 struct QuizQuestion: Codable, Identifiable {
@@ -15,7 +63,7 @@ struct QuizQuestion: Codable, Identifiable {
 
 // MARK: - 單字項目結構
 struct VocabItem: Codable, Identifiable {
-    var id = UUID() // <--- 新增這一行，提供唯一的識別符號
+    var id = UUID()
     let english_word: String
     let part_of_speech: String
     let chinese_meaning: String
@@ -75,7 +123,7 @@ class QuizDataLoader: ObservableObject {
                 let correctIndex = options.firstIndex(of: item.chinese_meaning) ?? 0
                 
                 return QuizQuestion(
-                    question: "'\(item.english_word)' 的中文意思是？",
+                    question: "\(item.english_word)",
                     options: options,
                     correctAnswer: correctIndex,
                     explanation: item.example_sentence
@@ -300,7 +348,6 @@ struct TestSelectionView: View {
             }
             .navigationTitle("選擇難度")
             .navigationBarTitleDisplayMode(.inline)
-            // ✅ 用新的 navigationDestination 替代 isActive NavigationLink
             .navigationDestination(isPresented: $navigateToQuiz) {
                 QuizView(level: selectedLevel ?? .b1)
             }
@@ -311,6 +358,7 @@ struct TestSelectionView: View {
 // MARK: - 測驗視圖
 struct QuizView: View {
     @StateObject private var dataLoader = QuizDataLoader()
+    @StateObject private var speechManager = SpeechManager()
     @State private var showingResults = false
     let level: DifficultyLevel
     
@@ -351,7 +399,7 @@ struct QuizView: View {
                         .font(.headline)
                         .foregroundColor(.white)
                 } else {
-                    QuizContentView(dataLoader: dataLoader, showingResults: $showingResults)
+                    QuizContentView(dataLoader: dataLoader, speechManager: speechManager, showingResults: $showingResults)
                 }
             }
         }
@@ -372,12 +420,17 @@ struct QuizView: View {
 // MARK: - 測驗內容視圖
 struct QuizContentView: View {
     @ObservedObject var dataLoader: QuizDataLoader
+    @ObservedObject var speechManager: SpeechManager
     @Binding var showingResults: Bool
-    
+
+    @State private var selectedOption: Int? = nil
+    @State private var isAnswering = false
+    @State private var showResultColor = false
+
     var currentQuestion: QuizQuestion {
         dataLoader.questions[dataLoader.currentQuestionIndex]
     }
-    
+
     var body: some View {
         VStack(spacing: 20) {
             // 進度條
@@ -385,35 +438,72 @@ struct QuizContentView: View {
                 ProgressView(value: Double(dataLoader.currentQuestionIndex + 1),
                            total: Double(dataLoader.questions.count))
                     .progressViewStyle(LinearProgressViewStyle(tint: .white))
-                
                 Text("第 \(dataLoader.currentQuestionIndex + 1) 題 / 共 \(dataLoader.questions.count) 題")
                     .font(.caption)
                     .foregroundColor(.white.opacity(0.8))
             }
-            
-            // 題目
-            Text(currentQuestion.question)
-                .font(.title2)
-                .fontWeight(.medium)
-                .foregroundColor(.white)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal)
-            
+
+            // 題目和發音按鈕
+            HStack(spacing: 15) {
+                Text(currentQuestion.question)
+                    .font(.title2)
+                    .fontWeight(.medium)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                
+                // 發音按鈕
+                Button(action: {
+                    speechManager.speak(text: currentQuestion.question)
+                }) {
+                    Image(systemName: speechManager.isSpeaking ? "speaker.wave.3.fill" : "speaker.wave.2.fill")
+                        .font(.title2)
+                        .foregroundColor(.white)
+                        .frame(width: 44, height: 44)
+                        .background(
+                            Circle()
+                                .fill(Color.white.opacity(0.2))
+                                .overlay(
+                                    Circle()
+                                        .stroke(Color.white.opacity(0.3), lineWidth: 2)
+                                )
+                        )
+                        .scaleEffect(speechManager.isSpeaking ? 1.1 : 1.0)
+                        .animation(.easeInOut(duration: 0.2), value: speechManager.isSpeaking)
+                }
+                .disabled(speechManager.isSpeaking)
+            }
+            .padding(.horizontal)
+
             // 選項
             VStack(spacing: 12) {
                 ForEach(Array(currentQuestion.options.enumerated()), id: \.offset) { index, option in
                     Button(action: {
+                        if isAnswering { return }
+                        isAnswering = true
+                        selectedOption = index
                         dataLoader.selectAnswer(index)
+                        let isCorrect = index == currentQuestion.correctAnswer
+                        if isCorrect {
+                            // 答對直接跳下一題
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
+                                goToNext()
+                            }
+                        } else {
+                            // 答錯顯示顏色，1秒後跳下一題
+                            showResultColor = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                                showResultColor = false
+                                goToNext()
+                            }
+                        }
                     }) {
                         HStack {
                             Text(option)
                                 .font(.body)
                                 .foregroundColor(.primary)
                                 .multilineTextAlignment(.leading)
-                            
                             Spacer()
-                            
-                            if dataLoader.selectedAnswers[dataLoader.currentQuestionIndex] == index {
+                            if selectedOption == index {
                                 Image(systemName: "checkmark.circle.fill")
                                     .foregroundColor(.blue)
                             }
@@ -421,48 +511,62 @@ struct QuizContentView: View {
                         .padding()
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(dataLoader.selectedAnswers[dataLoader.currentQuestionIndex] == index ?
-                                     Color.blue.opacity(0.2) : Color.white.opacity(0.9))
+                                .fill(buttonColor(index: index))
                         )
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(dataLoader.selectedAnswers[dataLoader.currentQuestionIndex] == index ?
-                                       Color.blue : Color.clear, lineWidth: 2)
+                                .stroke(selectedOption == index ? Color.blue : Color.clear, lineWidth: 2)
                         )
                     }
                     .buttonStyle(PlainButtonStyle())
+                    .disabled(isAnswering)
                 }
             }
-            
+
             Spacer()
-            
-            // 導航按鈕
-            HStack {
-                Button("上一題") {
-                    dataLoader.previousQuestion()
-                }
-                .disabled(dataLoader.currentQuestionIndex == 0)
-                .foregroundColor(.white)
-                
-                Spacer()
-                
-                if dataLoader.currentQuestionIndex == dataLoader.questions.count - 1 {
-                    Button("完成測驗") {
-                        dataLoader.calculateScore()
-                        showingResults = true
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .disabled(dataLoader.selectedAnswers[dataLoader.currentQuestionIndex] == nil)
-                } else {
-                    Button("下一題") {
-                        dataLoader.nextQuestion()
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .disabled(dataLoader.selectedAnswers[dataLoader.currentQuestionIndex] == nil)
-                }
-            }
         }
         .padding()
+        .onChange(of: dataLoader.currentQuestionIndex) { _, _ in
+            // 當題目變更時，自動播放單字發音
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                speechManager.speak(text: currentQuestion.question)
+            }
+        }
+        .onAppear {
+            // 第一次進入時也播放發音
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                speechManager.speak(text: currentQuestion.question)
+            }
+        }
+    }
+
+    private func goToNext() {
+        if dataLoader.currentQuestionIndex == dataLoader.questions.count - 1 {
+            dataLoader.calculateScore()
+            showingResults = true
+        } else {
+            dataLoader.nextQuestion()
+            selectedOption = nil
+            isAnswering = false
+        }
+    }
+
+    private func buttonColor(index: Int) -> Color {
+        guard let selected = selectedOption else {
+            return Color.white.opacity(0.9)
+        }
+        if showResultColor {
+            if index == selected && selected != currentQuestion.correctAnswer {
+                return Color.red.opacity(0.6) // 答錯紅色
+            }
+            if index == currentQuestion.correctAnswer {
+                return Color.green.opacity(0.6) // 正確綠色
+            }
+        }
+        if selected == index {
+            return Color.blue.opacity(0.2)
+        }
+        return Color.white.opacity(0.9)
     }
 }
 
@@ -731,7 +835,6 @@ struct MenuButton: View {
     let icon: String
     let description: String
     let colors: [Color]
-    // 移除 @State private var isPressed = false
 
     var body: some View {
         HStack(spacing: 15) {
@@ -739,7 +842,7 @@ struct MenuButton: View {
             Image(systemName: icon)
                 .font(.system(size: 24))
                 .foregroundColor(.white)
-                .frame(width: 40, height: 40)
+                .frame(width: 40, height: 40)  // 修正：添加 height 參數
                 .background(
                     Circle()
                         .fill(Color.white.opacity(0.2))
@@ -777,15 +880,5 @@ struct MenuButton: View {
                 )
                 .shadow(color: colors.first?.opacity(0.3) ?? .clear, radius: 8, x: 0, y: 4)
         )
-        // 移除以下兩行，讓 NavigationLink 處理點擊效果
-        // .scaleEffect(isPressed ? 0.95 : 1.0)
-        // .animation(.easeInOut(duration: 0.1), value: isPressed)
-        // 移除 onTapGesture 區塊
-        // .onTapGesture {
-        //     isPressed = true
-        //     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-        //         isPressed = false
-        //     }
-        // }
     }
 }
